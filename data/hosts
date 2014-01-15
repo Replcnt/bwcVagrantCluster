@@ -1,0 +1,11 @@
+127.0.0.1       localhost
+192.168.222.100  bwc.nimbus
+192.168.222.101  bwc.supervisor1
+192.168.222.102  bwc.supervisor2
+192.168.222.103  bwc.supervisor3
+192.168.222.104  bwc.supervisor4
+192.168.222.105  bwc.supervisor5
+192.168.222.201  bwc.zookeeper1
+192.168.222.202  bwc.zookeeper2
+192.168.222.203  bwc.zookeeper3
+192.168.222.204  bwc.zookeeper4
