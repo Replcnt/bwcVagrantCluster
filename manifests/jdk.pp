@@ -1,6 +1,6 @@
 
 
-$JDK_VERSION = "1.6.0_35"
+$JDK_VERSION = "1.6.0_45"
   
 package {"openjdk":
 	ensure  =>  absent,
