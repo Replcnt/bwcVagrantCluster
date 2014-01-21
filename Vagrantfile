@@ -1,7 +1,10 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 boxes = [
+	{ :name => :zookeeper1, :ip => '192.168.222.201', :cpus => 1, :memory => 1024 },
   { :name => :nimbus, :ip => '192.168.222.100', :cpus => 2, :memory => 1024 },
+	{ :name => :supervisor1, :ip => '192.168.222.101', :cpus => 4, :memory => 2048 },
+	{ :name => :supervisor2, :ip => '192.168.222.102', :cpus => 4, :memory => 2048 }
 ]
 
 # Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
