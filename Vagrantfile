@@ -110,7 +110,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 			end
 
 			# Ask puppet to provision VM
-			config.vm.provision :shell, :inline => "puppet apply /tmp/storm-puppet/manifests/site.pp --verbose --modulepath=/tmp/storm-puppet/modules/ --debug"
+			config.vm.provision :shell, :inline => "puppet apply /tmp/bwcPuppet/manifests/site.pp --verbose --modulepath=/tmp/bwcPuppet/modules/ --debug"
 	
   		# Enable provisioning with chef solo, specifying a cookbooks path, roles
   		# path, and data_bags path (all relative to this Vagrantfile), and adding

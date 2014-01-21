@@ -3,7 +3,7 @@
 
 # $CLONE_URL = "https://bitbucket.org/qanderson/storm-puppet.git"
 $CLONE_URL = "https://github.com/Replcnt/bwcPuppet.git"
-$CHECKOUT_DIR="/tmp/storm-puppet"
+$CHECKOUT_DIR="/tmp/bwcPuppet"
 
 
 package {git:ensure=> [latest,installed]}
@@ -26,8 +26,8 @@ exec { "clone_storm-puppet":
     require => Package['git'],
 }
   
-exec {"/bin/ln -s /var/lib/gems/1.8/gems/hiera-puppet-1.0.0/ /tmp/storm-puppet/modules/hiera-puppet":
-	creates => "/tmp/storm-puppet/modules/hiera-puppet",
+exec {"/bin/ln -s /var/lib/gems/1.8/gems/hiera-puppet-1.0.0/ ${CHECKOUT_DIR}/modules/hiera-puppet":
+	creates => "${CHECKOUT_DIR}/modules/hiera-puppet",
 	require => [Exec['clone_storm-puppet'],Exec['install_hiera']]
 }
 
